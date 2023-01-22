@@ -38,3 +38,17 @@
        (guess-my-number))
 
 ;; Defining local vars in lisp.
+(let ((a 5)
+      (b 6))
+   (+ a b))
+
+;; Defining local functions...using flet statement.
+(flet ((f (n)
+          (+ n 10)))
+      (f 5))
+
+;; eq builtin
+(eq 'foo 'foo)
+
+;; calculating exponential
+(expt 2 2)
