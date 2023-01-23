@@ -52,3 +52,7 @@
 
 ;; calculating exponential
 (expt 2 2)
+
+;; symbols are case insensitive. The below
+;; code would give True(T)
+(eq 'Foo 'foo)
