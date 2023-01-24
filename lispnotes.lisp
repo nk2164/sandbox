@@ -56,3 +56,21 @@
 ;; symbols are case insensitive. The below
 ;; code would give True(T)
 (eq 'Foo 'foo)
+
+;; displaying string - can include escaped chars as well.
+(princ "Tutti Frutti")
+(princ "He yelled \"Stop that thief!\" from the busy street.")
+
+;; The code mode is default...which is function followed by form
+;; You need to preface with a ' if you need to treat it like data.This is 
+;; called quoting.
+(expt 2 3)  ;; This is interpreted in code mode and returns an 8
+'(expt 2 3) ;; This is interpreted in data mode. This would just treat
+            ;; it like a string and return it back.
+
+;; cons cell they are like a glue that holds all the lists
+;; together. 
+
+;; Lists in lisp are manipulated using cons cdr and car
+
+(cons 'pork' '(beef chicken))
